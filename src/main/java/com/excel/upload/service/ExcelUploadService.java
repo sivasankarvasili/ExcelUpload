@@ -21,6 +21,7 @@ public class ExcelUploadService {
 	@Autowired
 	private EntityDataRepository entityDataRepository;
 	
+	//to save entity data
 	public void saveEntityData(List<Entity_DATA> list){
 		 entityDataRepository.save(list);
 	}
