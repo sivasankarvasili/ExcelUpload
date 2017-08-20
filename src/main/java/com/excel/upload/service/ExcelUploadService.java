@@ -25,6 +25,7 @@ public class ExcelUploadService {
 	public void saveEntityData(List<Entity_DATA> list){
 		 entityDataRepository.save(list);
 	}
+	//to save sales data
 	public void saveMdtSales(List<MDTSALES> list){
 		 mdtSalesRepository.save(list);
 	}
