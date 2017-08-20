@@ -21,11 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.excel.upload.model.DATASALES;
-import com.excel.upload.model.Entity_DATA;
-import com.excel.upload.model.MDTSALES;
-import com.excel.upload.service.ExcelUploadService;
-
 
 @RestController
 public class ExcelUploadController {
@@ -60,7 +55,7 @@ public class ExcelUploadController {
 		  service.saveEntityData(entity_list);
 		  service.saveMdtSales(mdtsales_list);
 		  service.saveDataSales(datasales_list);
-		  //close the resources
+		  //close resources
 		  workbook.close();
 		  inputStream.close();
 	 return "File Uploaded Successfully into the Database";	
